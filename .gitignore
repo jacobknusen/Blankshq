@@ -1,0 +1,4 @@
+# .gitignore
+**/gltf/*
+node_modules
+

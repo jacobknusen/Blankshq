@@ -1,0 +1,381 @@
+body {
+	background: #4a4a4a;
+	font-family: Arial;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: 'Bruno Ace SC Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Bruno Ace SC Regular'), url('BrunoAceSC-Regular.woff') format('woff');
+}
+
+a:link {
+	background-color: transparent;
+	text-decoration: none;
+}
+
+#logo {
+	position: absolute;
+	height: 0px;
+	width: 63px;
+	height: 85px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: fixed;
+	z-index: 1200;
+	top: 20px;
+	left: 20px;
+}
+
+
+#my-p {
+	font-family: 'Bruno Ace SC Regular';
+	color: #F7F7F7;
+	display: none;
+	position: absolute;
+	background-color: #111111a8;
+	border-radius: 10px;
+	padding: 20px;
+	width: 25%;
+	height: 20%;
+	font-size: 30px;
+	transform: translateY(-50%);
+	width: 472px;
+	height: 500px;
+	top: 50%;
+	left: 65%;
+	font-size: 18px;
+	line-height: 35px;
+	text-align: center;
+	padding: 50px;
+}
+
+#my-p1 {
+	font-family: 'Bruno Ace SC Regular';
+	color: #F7F7F7;
+	display: none;
+	position: absolute;
+	background-color: #111111a8;
+	border-radius: 10px;
+	padding: 20px;
+	width: 25%;
+	height: 20%;
+	font-size: 30px;
+	transform: translateY(-50%);
+	top: 50%;
+	left: 68%;
+	width: 472px;
+	height: 410px;
+	font-size: 18px;
+	line-height: 35px;
+	text-align: center;
+	padding: 35px;
+}
+
+#my-p2 {
+	font-family: 'Bruno Ace SC Regular';
+	color: #F7F7F7;
+	display: none;
+	position: absolute;
+	background-color: #111111a8;
+	border-radius: 10px;
+	padding: 20px;
+	width: 25%;
+	height: 20%;
+	font-size: 30px;
+	transform: translateY(-50%);
+	top: 50%;
+	left: 40px;
+	width: 472px;
+	height: 410px;
+	font-size: 18px;
+	line-height: 35px;
+	text-align: center;
+	padding: 50px;
+}
+
+#my-p3 {
+	font-family: 'Bruno Ace SC Regular';
+	color: #F7F7F7;
+	display: none;
+	position: absolute;
+	background-color: #111111a8;
+	border-radius: 10px;
+	padding: 20px;
+	width: 25%;
+	height: 20%;
+	font-size: 30px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 472px;
+	height: 250px;
+	font-size: 18px;
+	line-height: 35px;
+	text-align: center;
+	padding: 15px;
+}
+
+
+
+#buttonid {
+	position: absolute;
+	bottom: 2%;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #313131;
+	color: #f1f1f3;
+	width: 100px;
+	height: 40px;
+	border-radius: 5px;
+	font-size: medium;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: #f1f1f3;
+}
+
+#buttonid:hover {
+	background-color: #d6d6de;
+	opacity: 1;
+}
+#buttonid:active {
+	background-color: #d6d6de;
+	opacity: 1;
+	transition: .1s;
+}
+#instructions {
+	position: absolute;
+	font-family: 'Bruno Ace SC Regular';
+	color: #F7F7F7;
+	font-size: 10px;
+	backdrop-filter: blur(60px);
+	background-color: rgba(0, 0, 0, 0.10);
+	font-size: 20px;
+	text-align: center;
+	bottom: 60px;
+	right: 2%;
+	opacity: 0.8;
+	width: 500px;
+	line-height: 22px;
+
+}
+
+@media screen and (max-width:1024px) {
+	#logo {
+		width: 52px;
+		height: 75px;
+	}
+
+	#app-cover {
+		position: absolute;
+		right: -10px;
+	}
+
+	#loader {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		z-index: 1;
+		overflow: visible;
+		background: #f1f1f3 url(/static/models/mobile-loader.gif) no-repeat center center;
+	}
+
+	#my-p {
+		width: 350px;
+		height: 230px;
+		font-size: 12px;
+		line-height: 15px;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		padding: 15px;
+		line-height: 15px;
+	}
+
+	#my-p1 {
+		width: 350px;
+		height: 230px;
+		font-size: 12px;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		padding: 15px;
+		line-height: 15px;
+	}
+
+	#my-p2 {
+		width: 300px;
+		height: 220px;
+		font-size: 12px;
+		line-height: 15px;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		padding-top: 20px;
+		padding-bottom: 10px;
+	}
+
+	#my-p3 {
+		width: 280px;
+		height: 230px;
+		font-size: 13px;
+		line-height: 30px;
+
+	}
+
+	#buttonid {
+		border-radius: 10px;
+		width: fit-content;
+		font-size: small;
+		padding: 10px
+	}
+
+	#instructions {
+		font-size: 12px;
+		text-align: center;
+		bottom: 40px;
+		transform: translate(-50%, -50%);
+		opacity: 0.8;
+		width: 350px;
+		line-height: 15px;
+		left: 50%;
+	}
+}
+
+#info-icon-container {
+	position: absolute;
+	bottom: 1%;
+	right: 2%;
+}
+
+#info-icon {
+	color: #F7F7F7;
+	cursor: pointer;
+}
+
+#goBack-container {
+	position: fixed;
+	bottom: 3%;
+	width: 100%;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+#goBack {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #111111;
+	color: #f1f1f3;
+	width: 150px;
+	height: 50px;
+	border-radius: 12px;
+	font-size: larger;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: #f1f1f3;
+}
+#goBack:hover {
+	background-color: #d6d6de;
+	opacity: 1;
+}
+#goBack:active {
+	background-color: #d6d6de;
+	opacity: 1;
+	transition: .1s;
+}
+
+.progress-bar-container {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	flex-direction: center;
+	justify-content: center;
+	align-items: center;
+}
+
+#loader {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: 1;
+	overflow: visible;
+	background: #f1f1f3 url(/static/models/desktop-loader.gif) no-repeat center center;
+
+}
+
+
+/* Bould JukeBox */
+
+#app-cover {
+	position: relative;
+	height: 0px;
+	display: none;
+	flex-direction: center;
+	justify-content: center;
+	align-items: center;
+}
+
+#menu {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 15px;
+}
+
+.button {
+	width: 25px;
+	height: 25px;
+	padding: 15px;
+	background-color: #111111;
+	border-radius: 25px;
+	cursor: pointer;
+	margin-left: 10px;
+	margin-right: 10px;
+	opacity: 1;
+}
+
+.button i {
+	display: block;
+	color: #d6dee7;
+	font-size: 26px;
+	text-align: center;
+	line-height: 1;
+	opacity: 1;
+}
+
+.button,
+.button i {
+	transition: 0.2s ease all;
+}
+
+
+.button:hover {
+	background-color: #d6d6de;
+	opacity: 1;
+	transition: .1s;
+
+}
+
+.button:hover i {
+	color: #fff;
+	opacity: 1;
+	transition: .1s;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>BouldHQ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="BouldHQ 'underconstruction' Scene">
+
+  <meta name="keywords" content="ThreeJS, HTML, CSS, JavaScript">
+  <link rel="apple-touch-icon" sizes="180x180" href="../static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../static/favicon/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+</head>
+
+<body>
+  <div class="progress-bar-container">
+    <div id="loader"></div>
+  </div>
+  <!-- Bould JukeBox-->
+
+  <div id="app-cover">
+    <div id="logo">
+      <img src="../static/SVG/B.svg" alt="Bould icon" style="fill: aliceblue;" />
+    </div>
+    <div id="menu">
+      <div class="maincontrol">
+        <div class="button" id="twitter">
+          <a href="https://twitter.com/shopbouldblanks"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="maincontrol">
+        <div class="button" id="play-pause-button">
+          <i class="fas fa-volume-up"></i>
+        </div>
+      </div>
+      <div class="maincontrol">
+        <div class="button" id="instagram">
+          <a href="https://www.instagram.com/shopbouldblanks/"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div id="goBack-container">
+      <button id="goBack">Go Back</button>
+      <div class="maincontrol">
+        <div class="button" id="info-icon-container">
+          <i class="fas fa-info" id="info-icon"></i>
+        </div>
+        <div id="instructions" class="hidden">get a inside scoop for whats in store for bould inc.
+
+          <br>navigate our warehouse by using your finger,
+
+          <br>clicking the Go back button to exit any screen,
+
+          <br>scroll for any close up’s needed...
+
+          Enjoy the sneak peak</div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="music.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script type="text/javascript">
+    emailjs.init('Ic_13GbNiIvKbZAGJ')
+  </script>
+
+</body>
+
+</html>
